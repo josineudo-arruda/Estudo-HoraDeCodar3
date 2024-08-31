@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <title>Lógica 8</title>
+    <script>
+        var end = false;
+        while(!end) {
+            var numero = parseInt(prompt("Insira um número (maior que 0)")); 
+            if(numero > 0) {
+                for(i=0;i<numero;i++) {
+                    document.write("<p>"+(i+1)+"</p>")
+                }
+                end = true
+            } else {
+                alert("INSIRA UM VALOR ACIMA DE ZERO!")
+            }
+        }
+        
+    </script>
+  </head>
+  <body>
+  </body>
+</html>
