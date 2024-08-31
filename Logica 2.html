@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <title>Lógica 2</title>
+    <script>
+        function tempoBomba(tempo) {
+            document.write("<p>"+tempo+"</p>");
+        }
+
+        var i = 30;
+        var intervalo = setInterval(function() {
+            tempoBomba(i);
+            i--;
+
+            if (i == 0) {
+                clearInterval(intervalo);
+                document.write("<h1 style='color: red;'>EXPLOSÃO!</h1>");
+            }
+        }, 1000);
+    </script>
+  </head>
+  <body>
+  </body>
+</html>
