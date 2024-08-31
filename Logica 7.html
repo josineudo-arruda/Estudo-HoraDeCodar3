@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <title>Lógica 7</title>
+    <script>
+        var soma = 0;
+        for(i=0;i<6;i++) {
+            var nota = 0;
+            while(nota<=0 || nota>10) {
+                nota = parseFloat(prompt("Insira a nota (entre 0 e 10)"+i));
+            }
+            soma += nota;
+        }
+
+        var media = soma/6;
+        alert("A média calculada foi "+media.toFixed(2)) 
+    </script>
+  </head>
+  <body>
+  </body>
+</html>
