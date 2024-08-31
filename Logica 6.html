@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <title>Lógica 5</title>
+    <script>
+        var end = false;
+        while(!end) {
+            var nota1 = parseInt(prompt("Insira sua primeira nota: "));
+            var nota2 = parseInt(prompt("Insira sua segunda nota: "));
+            
+            var resultado = nota1+nota2/2;
+
+            if(resultado >= 9.5) {
+                alert("A média do aluno é "+resultado+" ! PASSOU");
+            } else {
+                alert("A média do aluno é "+resultado+" ! REPROVOU");
+            }
+
+            var ended = prompt("Deseja calcular outra média? \nS-SIM \nN-NÃO ");
+            switch(ended) {
+                case 'N':
+                    end = true;
+                    break;
+                case 'n':
+                    end = true;
+                    break;
+                default:
+                    alert("SIGA AS REGRAS DE LETRAS!");
+            }
+        }
+    </script>
+  </head>
+  <body>
+  </body>
+</html>
