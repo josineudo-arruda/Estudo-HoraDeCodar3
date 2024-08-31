@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <title>Lógica 11</title>
+    <script>
+        var numeros = [];
+        for(i=0;i<10;i++) {
+            var numero = parseInt(prompt("Insira um valor:"));
+            numeros.push(numero);
+        }
+
+       var entre24_42 = 0;
+        for(i=0;i<=numeros.length;i++) {
+            if(numeros[i] >= 24 && numeros[i] <= 42) {
+                entre24_42++;
+            }
+        }
+
+        alert("Números entre 24 e 42: "+entre24_42+" | Números fora: "+(10-entre24_42));
+    </script>
+  </head>
+  <body>
+  </body>
+</html>
