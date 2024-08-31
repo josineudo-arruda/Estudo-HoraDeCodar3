@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <title>Lógica 10</title>
+    <script>
+        var end = false;
+        while(!end) {
+            var numero = parseInt(prompt("Insira um número (maior que 0)")); 
+            if(numero > 0) {
+                document.write("<div style='display: flex; align-items: column;'>") //APRENDI FLEX GRAÇAS A VOCE GABRIEL
+                for(i=1;i<=numero;i++) {
+                    document.write("<div style='padding: 10px;'>")
+                    for(j=1;j<=10;j++) {
+                        document.write("<p>"+i+" x "+j+" = "+(i*j)+"</p>");
+                    }
+                    document.write("</div>")
+                }
+                document.write("</div>")
+                end = true
+            } else {
+                alert("INSIRA UM VALOR ACIMA DE ZERO!")
+            }
+        }
+        
+    </script>
+  </head>
+  <body>
+  </body>
+</html>
